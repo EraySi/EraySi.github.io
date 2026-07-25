@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>RideCast — Gizlilik Politikası / Privacy Policy</title>
+<meta name="description" content="RideCast gizlilik politikası: hangi verileri işliyoruz, canlı konum nasıl saklanıyor, haklarınız (KVKK / GDPR).">
+<link rel="icon" href="assets/icon.png">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site">
+  <div class="wrap">
+    <a class="brand" href="./"><img src="assets/icon.png" alt="RideCast"> RideCast</a>
+    <nav>
+      <a href="./">Ana Sayfa</a>
+      <a href="support.html">Destek</a>
+      <a href="privacy.html" aria-current="page">Gizlilik</a>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap">
+
+<p class="muted" style="margin-top:26px"><a href="#tr">🇹🇷 Türkçe</a> &nbsp;·&nbsp; <a href="#en">🇬🇧 English</a></p>
+
+<!-- ===================== TÜRKÇE ===================== -->
+<section id="tr">
+
+<h1>RideCast Gizlilik Politikası</h1>
+<p class="muted">Son güncelleme: 25 Temmuz 2026</p>
+
+<p><strong>Veri sorumlusu:</strong> Limon Teknoloji &middot;
+<strong>İletişim:</strong> <a href="mailto:smskery@gmail.com">smskery@gmail.com</a></p>
+
+<p>RideCast (“uygulama”), motosikletçiler için rota havası, sürüş riski, grup
+canlı konum paylaşımı ve masraf bölüşme özellikleri sunar. Bu politika, hangi
+verileri işlediğimizi ve nasıl koruduğumuzu açıklar.</p>
+
+<p>RideCast <strong>hesap oluşturmaz</strong>; gerçek adınızı, e-postanızı veya
+telefon numaranızı almaz. Uygulama içinde kimliğiniz, sunucuda otomatik üretilen
+<strong>anonim bir cihaz tanımlayıcısıyla</strong> temsil edilir.</p>
+
+<h2>1. Yalnızca cihazınızda kalan veriler</h2>
+<p>Yerel seyahat planınız, ayarlarınız ve çevrimdışı önbelleğiniz yalnızca
+cihazınızda saklanır; sunucumuza gönderilmez.</p>
+
+<h2>2. Hava ve rota servisleri</h2>
+<p>Seçtiğiniz konumların koordinatları ve arama metni, yalnızca isteğinizi
+yanıtlamak için aşağıdaki üçüncü taraf servislere iletilir. Bu servislere
+kimliğiniz <em>gönderilmez</em>:</p>
+<div class="table-scroll">
+<table>
+<tr><th>Veri</th><th>Servis</th><th>Amaç</th></tr>
+<tr><td>Yer adı (arama metni)</td><td>Open-Meteo Geocoding</td><td>Çıkış/varış arama</td></tr>
+<tr><td>Rota koordinatları</td><td>OSRM</td><td>Rota hesaplama</td></tr>
+<tr><td>Nokta koordinatları + zaman</td><td>Open-Meteo Forecast</td><td>Saatlik hava tahmini</td></tr>
+<tr><td>Nokta koordinatları</td><td>LocationIQ / BigDataCloud</td><td>Şehir adı (ters-geocode)</td></tr>
+<tr><td>Görünüm sınırları</td><td>OpenStreetMap / CARTO</td><td>Harita zemini</td></tr>
+</table>
+</div>
+
+<h2>3. Canlı konum paylaşımı (isteğe bağlı, varsayılan KAPALI)</h2>
+<p>Bu özelliği <strong>siz açtığınızda</strong>, sürüş süresince konumunuz
+(enlem, boylam, doğruluk) sunucumuza gönderilir ve <strong>yalnızca aynı
+seyahatin üyelerine</strong> gösterilir.</p>
+<ul>
+  <li>Sunucu: <strong>Supabase</strong>, bölge <strong>AB / Frankfurt (eu-central-1)</strong>.</li>
+  <li>Sunucuda <strong>üye başına yalnızca en son konum</strong> tutulur — iz/geçmiş tutulmaz.</li>
+  <li>Yaklaşık <strong>15 dakika</strong> hareketsizlikten sonra otomatik silinir.</li>
+  <li>Paylaşımı durdurduğunuzda veya seyahatten ayrıldığınızda/sildiğinizde
+      <strong>hemen silinir</strong>.</li>
+  <li>Varsayılan kapalıdır, açık rıza gerektirir; arka planda yalnızca sizin
+      başlattığınız görünür oturum boyunca çalışır (iOS konum göstergesi /
+      Android kalıcı bildirim ile).</li>
+  <li>Konum <strong>reklam veya takip için kullanılmaz</strong>.</li>
+</ul>
+
+<h2>4. Grup verisi</h2>
+<p>Paylaşımlı seyahatlerde girdiğiniz üye adı (takma ad) ve masraf kayıtları,
+yalnızca o seyahatin üyelerine görünür. Erişim sunucuda satır düzeyinde güvenlik
+(RLS) ile sınırlanır.</p>
+
+<h2>5. Toplanmayan veriler</h2>
+<p>Reklam yok, analitik yok, çökme/izleme SDK’sı yok. Gerçek ad, e-posta, telefon
+veya reklam tanımlayıcısı toplanmaz.</p>
+
+<h2>6. Yurt dışına aktarım (KVKK)</h2>
+<p>Sunucumuz Avrupa Birliği (Frankfurt) bölgesinde barındırılır. Canlı konum ve
+grup verisi bu nedenle yurt dışına aktarılabilir. Bu özelliği açık rızanızla
+kullanırsınız.</p>
+
+<h2>7. Saklama süresi</h2>
+<p>Canlı konum: en fazla ~15 dakika (yukarıya bakınız). Grup adı/masraf: seyahat
+silinene ya da siz ayrılana kadar. Yerel veriler: siz silene ya da uygulamayı
+kaldırana kadar yalnızca cihazınızda.</p>
+
+<h2>8. Haklarınız (KVKK m.11 / GDPR)</h2>
+<p>Verilerinize erişme, düzeltme ve silme hakkınız vardır. Canlı konumunuzu
+istediğiniz an paylaşımı durdurarak; grup verinizi seyahatten ayrılarak
+silebilirsiniz. Diğer talepleriniz için:
+<a href="mailto:smskery@gmail.com">smskery@gmail.com</a>. Talepler en geç
+<strong>30 gün</strong> içinde sonuçlandırılır.</p>
+
+<h2>9. Çocukların gizliliği</h2>
+<p>RideCast 13 yaş altı çocuklara yönelik değildir ve bilerek bu yaş grubundan
+veri toplamaz.</p>
+
+<h2>10. Değişiklikler</h2>
+<p>Bu politikayı zaman zaman güncelleyebiliriz. Güncel sürüm bu sayfada yayımlanır
+ve “son güncelleme” tarihi değişir.</p>
+
+</section>
+
+<hr>
+
+<!-- ===================== ENGLISH ===================== -->
+<section id="en">
+
+<h1>RideCast Privacy Policy</h1>
+<p class="muted">Last updated: July 25, 2026</p>
+
+<p><strong>Data controller:</strong> Limon Teknoloji &middot;
+<strong>Contact:</strong> <a href="mailto:smskery@gmail.com">smskery@gmail.com</a></p>
+
+<p>RideCast (the “app”) provides route weather, riding-risk scoring, group live
+location sharing, and expense splitting for motorcyclists. This policy explains
+what data we process and how we protect it.</p>
+
+<p>RideCast <strong>does not create accounts</strong>; it does not collect your
+real name, email, or phone number. Within the app, your identity is represented
+by an <strong>anonymous device identifier</strong> generated automatically on the
+server.</p>
+
+<h2>1. Data that stays only on your device</h2>
+<p>Your local trip plan, settings, and offline cache are stored only on your
+device and are not sent to our server.</p>
+
+<h2>2. Weather and routing services</h2>
+<p>The coordinates of the locations you choose and your search text are sent only
+to the following third-party services to fulfill your request. Your identity is
+<em>not</em> sent to these services:</p>
+<div class="table-scroll">
+<table>
+<tr><th>Data</th><th>Service</th><th>Purpose</th></tr>
+<tr><td>Place name (search text)</td><td>Open-Meteo Geocoding</td><td>Origin/destination search</td></tr>
+<tr><td>Route coordinates</td><td>OSRM</td><td>Route calculation</td></tr>
+<tr><td>Point coordinates + time</td><td>Open-Meteo Forecast</td><td>Hourly weather forecast</td></tr>
+<tr><td>Point coordinates</td><td>LocationIQ / BigDataCloud</td><td>City name (reverse geocode)</td></tr>
+<tr><td>Viewport bounds</td><td>OpenStreetMap / CARTO</td><td>Map tiles</td></tr>
+</table>
+</div>
+
+<h2>3. Live location sharing (optional, OFF by default)</h2>
+<p>When <strong>you turn this on</strong>, your location (latitude, longitude,
+accuracy) is sent to our server during the ride and shown
+<strong>only to the members of that specific trip</strong>.</p>
+<ul>
+  <li>Server: <strong>Supabase</strong>, region <strong>EU / Frankfurt (eu-central-1)</strong>.</li>
+  <li>Only the <strong>latest point per member</strong> is stored — no history/trail is kept.</li>
+  <li>It is automatically deleted after roughly <strong>15 minutes</strong> of inactivity.</li>
+  <li>It is <strong>deleted immediately</strong> when you stop sharing or leave/delete the trip.</li>
+  <li>Off by default; requires explicit consent. In the background it runs only
+      during the visible session you started (with the iOS location indicator /
+      Android persistent notification).</li>
+  <li>Location is <strong>never used for advertising or tracking</strong>.</li>
+</ul>
+
+<h2>4. Group data</h2>
+<p>The member name (nickname) and expense records you enter in shared trips are
+visible only to members of that trip. Access is restricted on the server with
+row-level security (RLS).</p>
+
+<h2>5. Data we do NOT collect</h2>
+<p>No ads, no analytics, no crash/tracking SDKs. We do not collect real names,
+emails, phone numbers, or advertising identifiers.</p>
+
+<h2>6. International transfer (GDPR / KVKK)</h2>
+<p>Our server is hosted in the European Union (Frankfurt) region. Live location
+and group data may therefore be transferred internationally. You use this feature
+with your explicit consent.</p>
+
+<h2>7. Retention</h2>
+<p>Live location: at most ~15 minutes (see above). Group name/expenses: until the
+trip is deleted or you leave. Local data: only on your device until you delete it
+or uninstall the app.</p>
+
+<h2>8. Your rights (GDPR / KVKK Art. 11)</h2>
+<p>You have the right to access, correct, and delete your data. You can delete
+your live location at any time by stopping sharing, and your group data by leaving
+the trip. For other requests:
+<a href="mailto:smskery@gmail.com">smskery@gmail.com</a>. We respond to requests
+within <strong>30 days</strong> at the latest.</p>
+
+<h2>9. Children’s privacy</h2>
+<p>RideCast is not directed at children under 13 and does not knowingly collect
+data from this age group.</p>
+
+<h2>10. Changes</h2>
+<p>We may update this policy from time to time. The current version is published
+on this page and the “last updated” date changes accordingly.</p>
+
+</section>
+
+</main>
+
+<footer class="site">
+  <div class="wrap">
+    <a href="./">Ana Sayfa</a>
+    <a href="support.html">Destek</a>
+    <a href="privacy.html">Gizlilik Politikası</a>
+    <a href="mailto:smskery@gmail.com">smskery@gmail.com</a>
+    <p>© 2026 RideCast · Limon Teknoloji</p>
+  </div>
+</footer>
+
+</body>
+</html>

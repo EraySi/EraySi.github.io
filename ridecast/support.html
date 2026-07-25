@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>RideCast — Destek / Support</title>
+<meta name="description" content="RideCast destek sayfası: iletişim, sık sorulan sorular, sorun giderme ve veri silme talepleri.">
+<link rel="icon" href="assets/icon.png">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site">
+  <div class="wrap">
+    <a class="brand" href="./"><img src="assets/icon.png" alt="RideCast"> RideCast</a>
+    <nav>
+      <a href="./">Ana Sayfa</a>
+      <a href="support.html" aria-current="page">Destek</a>
+      <a href="privacy.html">Gizlilik</a>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <h1>Destek</h1>
+  <p class="muted">RideCast · Son güncelleme: 25 Temmuz 2026</p>
+
+  <div class="card accent">
+    <h3 style="margin-top:0">Bize ulaş</h3>
+    <p>E-posta: <a href="mailto:smskery@gmail.com">smskery@gmail.com</a></p>
+    <p style="margin-bottom:0" class="muted">Genellikle <strong>2 iş günü</strong> içinde yanıt veriyoruz.
+      Yanıtı hızlandırmak için mesajına şunları ekle: cihaz modeli, işletim sistemi sürümü,
+      uygulama sürümü (Ayarlar ekranının altında yazar) ve sorunun ekran görüntüsü.</p>
+  </div>
+
+  <h2>Sık sorulan sorular</h2>
+
+  <details>
+    <summary>Hava tahmini nereden geliyor, ne kadar güvenilir?</summary>
+    <p>Tahminler <strong>Open-Meteo</strong> servisinden, rota ise <strong>OSRM</strong> üzerinden hesaplanır.
+      RideCast rotanı parçalara böler ve her parçaya <em>oraya tahmini varış saatindeki</em> tahmini eşler.
+      Hava tahmini doğası gereği kesin değildir; yola çıkmadan hemen önce ekranı bir kez daha yenilemeni öneririz.</p>
+  </details>
+
+  <details>
+    <summary>Sürüş risk skoru (İyi / Dikkatli / Riskli) neye göre hesaplanıyor?</summary>
+    <p>Skor motosiklet sürüşü açısından önemli olan etkenleri birlikte değerlendirir: yağış miktarı ve olasılığı,
+      rüzgâr hızı ve ani rüzgâr (özellikle yan rüzgâr), sıcaklık (donma ve aşırı sıcak eşikleri) ve görüş.
+      Skor bir tavsiyedir, karar her zaman sürücüye aittir — yol durumu, lastik ve tecrübe ekranda görünmez.</p>
+  </details>
+
+  <details>
+    <summary>Konumum paylaşılıyor mu? Nasıl durdururum?</summary>
+    <p>Canlı konum paylaşımı <strong>varsayılan olarak kapalıdır</strong>. Yalnızca sen bir seyahatte
+      paylaşımı açtığında çalışır ve konumun yalnızca <strong>o seyahatin üyelerine</strong> görünür.
+      Paylaşımı seyahat ekranındaki anahtarla istediğin an kapatabilirsin; kapattığın anda sunucudaki
+      son konumun silinir. Ayrıntılar için <a href="privacy.html">Gizlilik Politikası</a>.</p>
+  </details>
+
+  <details>
+    <summary>Arkadaşımı seyahate nasıl eklerim?</summary>
+    <p>Seyahat ekranındaki <strong>davet bağlantısını</strong> paylaş. Bağlantıya dokunan kişi aynı seyahate
+      katılır; masraf bölüşmede davetli üyeler varsayılan olarak <strong>dahildir</strong>, istersen tek tek
+      çıkarabilirsin.</p>
+  </details>
+
+  <details>
+    <summary>Masraf bölüşme nasıl çalışıyor?</summary>
+    <p>Herkesin harcamasını gir; RideCast eşit ya da <strong>dengesiz</strong> (kişi başı farklı pay) bölüşmeyi
+      destekler. Sonuçta “kim kime ne kadar borçlu” hesabı, <strong>en az sayıda ödemeyle</strong> kapanacak
+      şekilde sadeleştirilir.</p>
+  </details>
+
+  <details>
+    <summary>Uygulama hesap açmamı istemiyor, verilerim nerede?</summary>
+    <p>RideCast hesap oluşturmaz; gerçek adını, e-postanı veya telefonunu almaz. Seyahat planların ve ayarların
+      cihazında saklanır. Yalnızca paylaşımlı seyahatlerde takma adın, masraf kayıtların ve (açtıysan) canlı
+      konumun sunucuya (Supabase, AB/Frankfurt) yazılır.</p>
+  </details>
+
+  <details>
+    <summary>Uygulama konumumu bulamıyor / rota çizilmiyor</summary>
+    <p>Sırayla dene: (1) cihaz ayarlarından RideCast için konum iznini kontrol et,
+      (2) internet bağlantını doğrula — hava ve rota servisleri çevrimiçi çalışır,
+      (3) uygulamayı tamamen kapatıp yeniden aç,
+      (4) mağazadan güncelleme olup olmadığına bak. Sorun sürerse cihaz modeli ve ekran görüntüsüyle bize yaz.</p>
+  </details>
+
+  <details>
+    <summary>Verilerimin silinmesini istiyorum</summary>
+    <p>Canlı konumun paylaşımı durdurduğunda hemen silinir. Grup verilerin (takma ad, masraf kayıtları) seyahatten
+      ayrıldığında veya seyahat silindiğinde kaldırılır. Cihazındaki tüm yerel veriler uygulamayı kaldırdığında
+      silinir. Bunların dışında bir silme talebin varsa <a href="mailto:smskery@gmail.com">smskery@gmail.com</a>
+      adresine yaz; talebini <strong>30 gün</strong> içinde sonuçlandırırız.</p>
+  </details>
+
+  <details>
+    <summary>Hata bildirmek veya özellik önermek istiyorum</summary>
+    <p>Memnuniyetle. <a href="mailto:smskery@gmail.com">smskery@gmail.com</a> adresine yaz; konuyu
+      “Hata” ya da “Öneri” diye başlıklandırırsan daha hızlı sıraya alırız.</p>
+  </details>
+
+  <hr>
+
+  <h2 id="en">Support (English)</h2>
+  <p>Contact: <a href="mailto:smskery@gmail.com">smskery@gmail.com</a> — we usually reply within 2 business days.
+    Please include your device model, OS version, app version and a screenshot.</p>
+  <ul>
+    <li><strong>Weather data</strong> comes from Open-Meteo; routing from OSRM. Forecasts are estimates — refresh right before you ride.</li>
+    <li><strong>Riding-risk score</strong> combines precipitation, wind and gusts (especially crosswind), temperature and visibility. It is advice, not a decision.</li>
+    <li><strong>Live location sharing is off by default.</strong> It runs only while you enable it for a trip, is visible only to that trip's members, keeps no history, and is deleted the moment you turn it off.</li>
+    <li><strong>Data deletion:</strong> stop sharing to delete your location, leave or delete a trip to remove group data, uninstall to erase local data. For any other request, email us and we will respond within 30 days.</li>
+    <li><strong>Bugs &amp; feature requests:</strong> email us with “Bug” or “Feature” in the subject line.</li>
+  </ul>
+  <p>Privacy details: <a href="privacy.html">Privacy Policy</a>.</p>
+
+</main>
+
+<footer class="site">
+  <div class="wrap">
+    <a href="./">Ana Sayfa</a>
+    <a href="support.html">Destek</a>
+    <a href="privacy.html">Gizlilik Politikası</a>
+    <a href="mailto:smskery@gmail.com">smskery@gmail.com</a>
+    <p>© 2026 RideCast · Limon Teknoloji</p>
+  </div>
+</footer>
+
+</body>
+</html>
