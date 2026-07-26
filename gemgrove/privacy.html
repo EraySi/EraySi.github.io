@@ -25,8 +25,9 @@
   <p>Gemgrove, <strong>Eray Şimşek</strong> tarafından geliştirilen bir mobil blok
   bulmaca oyunudur. Bu politika, uygulamanın hangi verilere eriştiğini ve bunlarla ne
   yaptığını açıklar. Kısa cevap: <strong>biz senden hiçbir kişisel veri
-  toplamıyoruz</strong>; uygulama içindeki reklamları sunan Google ise reklamcılık
-  amacıyla bazı verilere erişir.</p>
+  toplamıyoruz</strong>; uygulama içindeki reklamları sunan ve çökme/kullanım
+  istatistiklerini toplayan Google ise reklamcılık ve ölçümleme amacıyla bazı
+  verilere erişir.</p>
 
   <h2>1. Hesap yok, kayıt yok</h2>
   <p>Oyunu oynamak için hesap açman, e-posta vermen veya giriş yapman gerekmez.
@@ -93,27 +94,41 @@
   paylaşıldığını düşünüyorsan bizimle iletişime geç; ilgili veriyi sildirmek için
   gerekeni yaparız.</p>
 
-  <h2>6. Uygulama içi satın alma ve analitik</h2>
-  <p>Bu sürümde <strong>uygulama içi satın alma yoktur</strong> ve
-  <strong>analitik/çökme raporlama aracı kullanılmamaktadır</strong>. İleride
-  eklenirse bu politika güncellenir ve uygulama içinde duyurulur.</p>
+  <h2>6. Analitik ve çökme raporlama (Firebase)</h2>
+  <p>Uygulamada <strong>Google Firebase Analytics ve Crashlytics</strong>
+  kullanılıyor. Amaç, oyunun nerede zorlandığını ve hangi cihazlarda çöktüğünü
+  görebilmek. Gönderilen olaylar sayılıdır:</p>
+  <ul>
+    <li>Tur başlangıcı ve bitişi (skor, seviye, hamle sayısı, süre)</li>
+    <li>"Devam Et" teklifinin gösterilmesi ve kabul edilmesi</li>
+    <li>Reklamın gösterilmesi veya yüklenememesi (biçim adı ve hata sebebi)</li>
+    <li>Uygulama çökerse: çökme yığını, cihaz modeli ve işletim sistemi sürümü</li>
+  </ul>
+  <p>Bu olayların hiçbiri seni kişi olarak tanımlamaz; ad, e-posta, konum veya
+  rehber gibi bir veri gönderilmez. Firebase, cihaz başına rastgele üretilmiş bir
+  uygulama kimliği kullanır ve bunu uygulama ayarlarından ya da uygulamayı silip
+  yeniden kurarak sıfırlayabilirsin.</p>
 
-  <h2>7. Veri güvenliği ve saklama</h2>
+  <h2>7. Uygulama içi satın alma</h2>
+  <p>Bu sürümde <strong>uygulama içi satın alma yoktur</strong>. Oyun tamamen
+  ücretsizdir ve reklamlarla desteklenir.</p>
+
+  <h2>8. Veri güvenliği ve saklama</h2>
   <p>Bizim sunucumuzda senin hiçbir verin bulunmadığı için, bizde saklanan bir veri
   de yoktur. Google'ın sakladığı reklam verilerinin süresi ve güvenliği Google'ın
   kendi politikalarına tabidir.</p>
 
-  <h2>8. Haklarınız</h2>
+  <h2>9. Haklarınız</h2>
   <p>KVKK (Türkiye) ve GDPR (AB) kapsamında verilerine erişme, düzeltme, silme ve
   işlemeye itiraz etme hakların vardır. Bizde kişisel veri tutulmadığı için bu
   talepler esasen Google'a yöneliktir; yine de bize yazarsan yönlendirmede yardımcı
   oluruz.</p>
 
-  <h2>9. Değişiklikler</h2>
+  <h2>10. Değişiklikler</h2>
   <p>Bu politika değişirse buradaki "son güncelleme" tarihi değişir. Önemli
   değişiklikler uygulama içinde de duyurulur.</p>
 
-  <h2>10. İletişim</h2>
+  <h2>11. İletişim</h2>
   <p>Soruların için: <a href="mailto:smskery@gmail.com">smskery@gmail.com</a></p>
 </section>
 
@@ -124,8 +139,9 @@
 
   <p>Gemgrove is a mobile block puzzle game developed by <strong>Eray Şimşek</strong>.
   This policy explains what the app touches and what it does with it. The short
-  version: <strong>we collect no personal data from you</strong>; Google, which serves
-  the ads inside the app, accesses some data for advertising purposes.</p>
+  version: <strong>we collect no personal data from you</strong>; Google — which
+  serves the ads and collects crash and usage statistics — accesses some data for
+  advertising and measurement.</p>
 
   <h2>1. No account, no sign-up</h2>
   <p>You do not need an account, an email address, or a login to play. We do not ask
@@ -186,26 +202,40 @@
   anyone under 13. If you believe your child has used the app and data was shared,
   contact us and we will help get it removed.</p>
 
-  <h2>6. In-app purchases and analytics</h2>
-  <p>This version has <strong>no in-app purchases</strong> and uses <strong>no
-  analytics or crash-reporting SDK</strong>. If either is added later, this policy
-  will be updated and the change announced in the app.</p>
+  <h2>6. Analytics and crash reporting (Firebase)</h2>
+  <p>The app uses <strong>Google Firebase Analytics and Crashlytics</strong>, so we
+  can see where the game gets frustrating and which devices it crashes on. The
+  events sent are few and specific:</p>
+  <ul>
+    <li>Start and end of a run (score, level, number of moves, duration)</li>
+    <li>The "Continue" offer being shown, and being accepted</li>
+    <li>An ad being shown, or failing to load (format name and error reason)</li>
+    <li>If the app crashes: the crash stack, device model and OS version</li>
+  </ul>
+  <p>None of these identify you as a person; no name, email, location or contacts
+  are ever sent. Firebase uses a randomly generated per-device app instance ID,
+  which you can reset from the app's settings or by deleting and reinstalling the
+  app.</p>
 
-  <h2>7. Security and retention</h2>
+  <h2>7. In-app purchases</h2>
+  <p>This version has <strong>no in-app purchases</strong>. The game is entirely
+  free and supported by ads.</p>
+
+  <h2>8. Security and retention</h2>
   <p>Because none of your data reaches our servers, we hold nothing to retain. The
   retention and security of the advertising data Google holds is governed by Google's
   own policies.</p>
 
-  <h2>8. Your rights</h2>
+  <h2>9. Your rights</h2>
   <p>Under GDPR (EU) and KVKK (Türkiye) you have the right to access, correct, delete,
   and object to the processing of your data. As we hold no personal data, such
   requests are directed to Google; write to us anyway and we will help you route them.</p>
 
-  <h2>9. Changes</h2>
+  <h2>10. Changes</h2>
   <p>If this policy changes, the "last updated" date above changes with it. Material
   changes will also be announced in the app.</p>
 
-  <h2>10. Contact</h2>
+  <h2>11. Contact</h2>
   <p>Questions: <a href="mailto:smskery@gmail.com">smskery@gmail.com</a></p>
 </section>
 
