@@ -1,18 +1,18 @@
-/* Gemgrove — public site (marketing / support / privacy).
+/* Sortcraft — public site (marketing / support / privacy).
    Tek dosya, dış bağımlılık yok: font, CDN, analytics YOK. Gizlilik politikası
    "veri toplamıyoruz" dediği için sitenin de toplamaması gerekir.
-   Palet doğrudan oyunun Palette.cs'inden: BgBottom #0C1030, BoardPanel #131A43,
-   BoardLine #4A5CB8, sarı blok #FFD639, nane blok #2EE6A8. */
+   Palet oyunun atölye temasından: gece mavisi #071426, panel #0E2038,
+   altın #E8B95E, parşömen #FFF5D6. */
 
 :root {
   color-scheme: dark light;
-  --bg: #0c1030; --fg: #ffffff; --dim: #c8cfee; --faint: #8e97c4;
-  --gold: #ffd639; --jade: #2ee6a8; --line: #4a5cb8; --card: #131a43;
+  --bg: #071426; --fg: #fff5d6; --dim: #d7c6a1; --faint: #8194ad;
+  --gold: #e8b95e; --jade: #7fcfae; --line: #274565; --card: #0e2038;
 }
 @media (prefers-color-scheme: light) {
   :root {
-    --bg: #f6f7fd; --fg: #131a43; --dim: #333a5c; --faint: #5c6488;
-    --gold: #8a6a00; --jade: #0f7a5c; --line: #c4cbe8; --card: #e9ecf8;
+    --bg: #f8f6f0; --fg: #12263c; --dim: #3a4a5e; --faint: #62748a;
+    --gold: #8a6512; --jade: #14705a; --line: #cfd8e4; --card: #ecebe4;
   }
 }
 
